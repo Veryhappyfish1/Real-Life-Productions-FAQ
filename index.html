@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Life Productions — FAQ</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --panel: #171a21;
+      --panel-2: #1d2230;
+      --text: #f4f4f5;
+      --muted: #b7bcc8;
+      --accent: #8b5cf6;
+      --accent-2: #22c55e;
+      --border: rgba(255,255,255,0.08);
+      --shadow: 0 18px 45px rgba(0,0,0,.35);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(139,92,246,.18), transparent 30%),
+        radial-gradient(circle at right, rgba(34,197,94,.12), transparent 25%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(139,92,246,.16), rgba(34,197,94,.10));
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 34px;
+      box-shadow: var(--shadow);
+      margin-bottom: 26px;
+    }
+
+    .kicker {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      max-width: 760px;
+      font-size: 1.03rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02));
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+      transition: transform .18s ease, border-color .18s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(139,92,246,.35);
+    }
+
+    .q {
+      font-size: 1.02rem;
+      font-weight: 700;
+      margin: 0 0 10px;
+    }
+
+    .a {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid var(--border);
+    }
+
+    .footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: .95rem;
+      text-align: center;
+    }
+
+    .highlight {
+      color: #fff;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="kicker">Real Life Productions</div>
+      <h1>Frequently Asked Questions</h1>
+      <p class="subtitle">
+        A simple Q&A page for your game studio. It covers playtesting, demos, DLC, art style,
+        and a few fun community questions from the team and fans.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <p class="q">Are you planning to hire playtesters, or where do you put your prototype games?</p>
+        <p class="a"><span class="highlight">Yes, we are.</span> We will let you know when we are ready to bring in playtesters.</p>
+        <div class="meta"><span class="tag">Playtesting</span><span class="tag">Prototype builds</span></div>
+      </article>
+
+      <article class="card">
+        <p class="q">Will there be a Manic 3 demo before release?</p>
+        <p class="a">Maybe. We also need reviews so far, so we are still deciding the best time to share one.</p>
+        <div class="meta"><span class="tag">Manic 3</span><span class="tag">Demo</span></div>
+      </article>
+
+      <article class="card">
+        <p class="q">Will there be any DLC for our other games?</p>
+        <p class="a">It depends on the type of game we are working on.</p>
+        <div class="meta"><span class="tag">DLC</span><span class="tag">Depends on the project</span></div>
+      </article>
+
+      <article class="card">
+        <p class="q">What created Real Life Productions?</p>
+        <p class="a">We love the <span class="highlight">2000s</span> and the <span class="highlight">80s</span>, so we wanted to bring that feeling back with our own style.</p>
+        <div class="meta"><span class="tag">Studio origin</span><span class="tag">Retro inspiration</span></div>
+      </article>
+
+      <article class="card">
+        <p class="q">Do you like apples or not?</p>
+        <p class="a">Yeah.</p>
+        <div class="meta"><span class="tag">Fun question</span><span class="tag">Apples</span></div>
+      </article>
+
+      <article class="card">
+        <p class="q">What is with all of the PSX-style visuals? Can you do a different style?</p>
+        <p class="a">We could try, but our studio is heavily based on old games and boomer shooter style games, so we are not stopping anytime soon.</p>
+        <div class="meta"><span class="tag">PSX style</span><span class="tag">Retro visuals</span></div>
+      </article>
+
+      <article class="card">
+        <p class="q">Will there be birds in the game?</p>
+        <p class="a">Maybeeee.</p>
+        <div class="meta"><span class="tag">Game details</span><span class="tag">Maybe</span></div>
+      </article>
+
+      <article class="card">
+        <p class="q">Are you planning to get a team for a game, or another music composer?</p>
+        <p class="a">Again, it depends on the game. If the project is large, then maybe we will.</p>
+        <div class="meta"><span class="tag">Team size</span><span class="tag">Music composer</span></div>
+      </article>
+
+      <article class="card">
+        <p class="q">Why are you Juan?</p>
+        <p class="a">Because I am Juan.</p>
+        <div class="meta"><span class="tag">Community joke</span><span class="tag">Juan</span></div>
+      </article>
+    </section>
+
+    <p class="footer">Questions gathered from Apple Alice, Richard, Poa, Belly Crafter, Juan, Cassidy, TF2 Medic, Mike, and Max.</p>
+  </main>
+</body>
+</html>
